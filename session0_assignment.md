@@ -25,8 +25,7 @@ matrix is 49 but the number of parameters used in 3 convolutions using 3*3 matri
 this advantage of keeping the number of parameters low, 3*3 kernels are preferred in many
 scenarios.
 
-### How many times do we need to perform 3x3 convolutions operations to reach
-close to 1x1 from 199x199 (type each layer output like 199x199 > 197x197...) ###
+### How many times do we need to perform 3x3 convolutions operations to reach close to 1x1 from 199x199 (type each layer output like 199x199 > 197x197...) ###
 
 We need to perform the convolution 99 times.
 
@@ -138,3 +137,5 @@ the features found in an individual neuron may vary from one training run to ano
 In scenarios where we are not getting the desired results, other initialization schemes like He initialization, MSRA initialization , Xavier initialization/Glorot initialization can be tried. 
 
 ### 5. What happens during the training of a DNN? ###
+
+For the training of a deep neural network, an input data set is created. The training cycle begins using the training data set. The network is initialized with random parameters and the network predicts an output. The difference between the expected output and the actual output is considered as loss and is calculated using a loss function. Based on this loss, the parameters are adjusted via back propagation. This happens repeatedly over the training cycle till we obtain a model with an acceptable accuracy level. The model is then tested against a separate test data set to ensure that the model works well on a general dataset and has not been over-fit.  
