@@ -1,1 +1,1 @@
-# eva6
+# Repository for all assignment submissions for EVA6
