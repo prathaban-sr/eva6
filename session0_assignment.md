@@ -1,6 +1,6 @@
 ### 1. What are Channels and Kernels (according to EVA)? ###
 
-A channel is a container for same kind of information. e.g. All digital images are formed using a
+* A channel is a container for same kind of information. e.g. All digital images are formed using a
 combination of RGB colors. Red, Green and Blue are individual channels of information. For print
 medium, there are four separate channels of information, CMYK.
 When we are looking at identifying more specific objects like text information, each alphabet can be
@@ -8,21 +8,22 @@ considered as a channel. Say, the letter e, written in multiple fonts, sizes, or
 grouped into one channel. The accuracy obtained by defining channels at this level may not be great. We
 can improve the accuracy of the model further by creating channels for each font/size/case/orientation of
 e.
-These channels identified by the first layer in the network, can be used to compose more complex
+These channels identified by the initial layers of the network, can be used to compose more complex
 channels in subsequent layers. This is the core concept of how a human vision system works and how
 neural networks have been modelled to work as well.
-Kernels are also referred to as filters or feature extractors. In a physical sense, kernels are matrices of
-size 3*3, 5*5 etc. They get convolved with the pixels in the image to extract features and form the next
+
+* Kernels are also referred to as filters or feature extractors. In a physical sense, kernels are matrices of
+size 3x3, 5x5 etc. They get convolved with the pixels in the image to extract features and form the next
 layer.
 
 ### 2. Why should we (nearly) always use 3x3 kernels? ###
 
 As the number of layers grows, a major concern is to keep the number of parameters to the
 minimum required. Convolutions have the property that multiple convolutions with a small matrix
-can be equivalent to a single convolution with a large matrix. e.g. A single convolution with a 7*7
-matrix is the same as 3 convolutions with a 3*3 matrix. The number of parameters used in a 7*7
-matrix is 49 but the number of parameters used in 3 convolutions using 3*3 matrix is 27. Due to
-this advantage of keeping the number of parameters low, 3*3 kernels are preferred in many
+can be equivalent to a single convolution with a large matrix. e.g. A single convolution with a 7x7
+matrix is the same as 3 convolutions with a 3x3 matrix. The number of parameters used in a 7x7
+matrix is 49 but the number of parameters used in 3 convolutions using 3x3 matrix is 27. Due to
+this advantage of keeping the number of parameters low, 3x3 kernels are preferred in many
 scenarios.
 
 ### How many times do we need to perform 3x3 convolutions operations to reach close to 1x1 from 199x199 (type each layer output like 199x199 > 197x197...) ###
