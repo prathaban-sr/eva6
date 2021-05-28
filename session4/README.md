@@ -1,6 +1,6 @@
-# EVA6 Repository #
+# EVA6 Session 4 #
 
-Repository for all assignment submissions for EVA6
+Session 4 assignment submission for EVA6
 
 ## Team ##
 
