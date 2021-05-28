@@ -9,7 +9,7 @@ Repository for all assignment submissions for EVA6
 * Siddharth Vij
 * Santosh Chaganti
 
-### Session 0 Assignment ###
+### Session 4 Assignment ###
 
 * **Main file** EVA_Session_4.ipynb
 * **Contents** 
