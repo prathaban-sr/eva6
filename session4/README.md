@@ -10,7 +10,16 @@ Session 4 assignment submission for EVA6
 * Santosh Chaganti
 
 ### Session 4 Assignment ###
+## PART I
+* **Back Propogation**
 
+## Training model on Excel
+![Test PDF 1](https://github.com/prathaban-sr/eva6/blob/main/session4/back_prop.png)
+
+## Graphs for varying learning rates
+![Test Image 1](https://github.com/prathaban-sr/eva6/blob/main/session4/Learning%20Rate%20Variation.png)
+
+## PART II
 * **Main file** EVA_Session_4.ipynb
 * **Contents** 
 MNIST classification using CNN. 
@@ -19,7 +28,6 @@ MNIST classification using CNN.
 1. Train for less than 20 epochs
 1. Accuracy >= 99.4% 
 
-*
 * **Solution**
 * **Network architecture**
 ```
