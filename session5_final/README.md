@@ -56,7 +56,7 @@ Add image augmentation by introducing random rotation
 
 ### Analysis
 
-*   Test Accuracy 99.3 consistent over last 3 epochs.
+*   Test Accuracy varying between 99.15 and 99.32 over last 5 epochs..
 *   Test and train accuracy are tracking very closely
 * Seeing the wrong image set, we can conclude that it is difficult even for a human to predict those images correctly.
 
