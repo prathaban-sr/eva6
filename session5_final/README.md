@@ -41,7 +41,7 @@ Add batch normalization and dropout regularisation
 
 *   Test Accuracy at 99.3 for last 2 epochs.
 *   Test and train accuracy are tracking very closely
-* Seeing the wrong image set, we can conclude that it is difficult even for a human to predict those images correctly.
+* Seeing the wrong image set, we can rotate images to improve prediction.
 
 ### Iteration 3
 * **Main file** EVA_Session_5_experiment3_3 
