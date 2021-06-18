@@ -43,6 +43,16 @@ Params size (MB): 0.71
 Estimated Total Size (MB): 1.58
 ----------------------------------------------------------------
 ```
+## Receptive Field Calculation ##
+```
+Layer #	Kernel Stride Dilation	Padding	Input Output 	Receptive Field
+1	3	2	1	1	32	16	3
+2	3	2	1	1	16	8	7
+3	3	1	1	2	8	8	15
+4	3	1	1	2	8	8	23
+5	3	1	2	0	8	4	39
+6	4	1	1	0	4	1	51
+```
 
 ## Data Augmentation ##
 ```
