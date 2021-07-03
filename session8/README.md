@@ -12,7 +12,6 @@ Session 8 assignment submission for EVA6
 * Created a separate repo to hold the training template files (https://github.com/prathaban-sr/soai_repo)
 * Created a python wheel file for the above (https://github.com/prathaban-sr/soai_repo/blob/main/dist/soai-0.0.1-py3-none-any.whl)
 * Tested on Google Colab using the wheel file with the following conditions
-
 - Train resnet18 for 20 epochs on the CIFAR10 dataset
 - Show loss, accuracy curves for test and train datasets
 - Show a gallery of 10 misclassified images
