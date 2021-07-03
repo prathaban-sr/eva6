@@ -8,14 +8,15 @@ Session 8 assignment submission for EVA6
 * Santosh Chaganti
 
 ## Solution ##
-* Implemented Resnet18 in the desired structure. 
-* Created a separate repo to hold the training template files
-* Created a python wheel file for the above
-* Tested on Google Colab using the wheel file with the followin conditions
-** Train resnet18 for 20 epochs on the CIFAR10 dataset
-** Show loss, accuracy curves for test and train datasets
-** Show a gallery of 10 misclassified images
-** Show gradcam output on 10 misclassified images. 
+* Implemented Resnet18 in the desired structure. (https://github.com/prathaban-sr/eva6/blob/main/session8/EVA_Session8.ipynb)
+* Created a separate repo to hold the training template files (https://github.com/prathaban-sr/soai_repo)
+* Created a python wheel file for the above (https://github.com/prathaban-sr/soai_repo/blob/main/dist/soai-0.0.1-py3-none-any.whl)
+* Tested on Google Colab using the wheel file with the following conditions
+
+- Train resnet18 for 20 epochs on the CIFAR10 dataset
+- Show loss, accuracy curves for test and train datasets
+- Show a gallery of 10 misclassified images
+- Show gradcam output on 10 misclassified images. 
 
 * **Training**
 1. Trained for 20 epochs
