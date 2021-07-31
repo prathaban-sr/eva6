@@ -7,14 +7,15 @@ Session 11 assignment submission for EVA6
 * S R Prathaban
 
 ## Solution ##
+* **OpenCV Yolo**
+* Ran Yolo on Coco classes and gnerated detections
+![Original](https://github.com/prathaban-sr/eva6/blob/main/session11/cycle3.jpeg)
+![Detection](https://github.com/prathaban-sr/eva6/blob/main/session11/yolo_out.jpg)
+
+* **Custom Dataset on Yolo**
 * Implemented Yolov3 in the desired structure. 
 * Performed detections on images from 4 classes Hardhat, Masks, Boots and Vests
 * Performed detection on video
-
-* **Training**
-1. Trained for 20 epochs
-2. SGD optimizer with a learning rate of 0.01
-3. CosineAnnealingLR
 
 * **Yolo Detections on images**
 
