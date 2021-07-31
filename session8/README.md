@@ -1,50 +1,41 @@
-# EVA6 Session 8 #
+# EVA6 Session 11 #
 
-Session 8 assignment submission for EVA6
+Session 11 assignment submission for EVA6
 
 ## Team ##
 
 * S R Prathaban
-* Santosh Chaganti
 
 ## Solution ##
-* Implemented Resnet18 in the desired structure. 
-* Created a separate repo to hold the training template files (https://github.com/prathaban-sr/soai_repo)
-* Created a python wheel file for the above (https://github.com/prathaban-sr/soai_repo/blob/main/dist/soai-0.0.1-py3-none-any.whl)
-* Tested on Google Colab using the wheel file with the following conditions (https://github.com/prathaban-sr/eva6/blob/main/session8/EVA_Session8.ipynb)
-- Train resnet18 for 20 epochs on the CIFAR10 dataset
-- Show loss, accuracy curves for test and train datasets
-- Show a gallery of 10 misclassified images
-- Show gradcam output on 10 misclassified images. 
+* Implemented Yolov3 in the desired structure. 
+* Performed detections on images from 4 classes Hardhat, Masks, Boots and Vests
+* Performed detection on video
 
 * **Training**
 1. Trained for 20 epochs
 2. SGD optimizer with a learning rate of 0.01
 3. CosineAnnealingLR
 
-* **Loss, Accuracy graphs**
-![Accuracy, Loss Graphs](https://github.com/prathaban-sr/eva6/blob/main/session8/training_loss.png)
+* **Yolo Detections on images**
 
-* **Wrongly classified images**
+![HardHat1](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_000.jpg)
+![HardHat2](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_002.jpg)
+![HardHat3](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_003.jpg)
+![HardHat4](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_011.jpg)
+![Masks1](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_051.jpg)
+![Masks2](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_053.jpg)
+![Masks3](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_055.jpg)
+![Masks4](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_066.jpg)
+![Vests1](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_076.jpg)
+![Vests2](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_082.jpg)
+![Vests3](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_085.jpg)
+![Vests4](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_096.jpg)
+![Boots1](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_026.jpg)
+![Boots2](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_030.jpg)
+![Boots3](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_034.jpg)
+![Boots4](https://github.com/prathaban-sr/eva6/blob/main/session11/rs_newimg_045.jpg)
 
-![Wrongly classified images](https://github.com/prathaban-sr/eva6/blob/main/session8/wrong_classification.png)
-![Wrongly classified images](https://github.com/prathaban-sr/eva6/blob/main/session8/wrong_classification_2.png)
-![Wrongly classified images](https://github.com/prathaban-sr/eva6/blob/main/session8/wrong_classification_3.png)
-![Wrongly classified images](https://github.com/prathaban-sr/eva6/blob/main/session8/wrong_classification_4.png)
-![Wrongly classified images](https://github.com/prathaban-sr/eva6/blob/main/session8/wrong_classification_5.png)
-![Wrongly classified images](https://github.com/prathaban-sr/eva6/blob/main/session8/wrong_classification_6.png)
-![Wrongly classified images](https://github.com/prathaban-sr/eva6/blob/main/session8/wrong_classification_7.png)
-![Wrongly classified images](https://github.com/prathaban-sr/eva6/blob/main/session8/wrong_classification_8.png)
-![Wrongly classified images](https://github.com/prathaban-sr/eva6/blob/main/session8/wrong_classification_9.png)
-![Wrongly classified images](https://github.com/prathaban-sr/eva6/blob/main/session8/wrong_classification_10.png)
+* **Yolo Detection on Video**
 
-* **Attention Maps**
-
-![Original Images](https://github.com/prathaban-sr/eva6/blob/main/session8/original_imgs.png)
-
-![Heatmap](https://github.com/prathaban-sr/eva6/blob/main/session8/attention_map.png)
-
-* **Results**
-* Train Loss:0.093,Acc:96.770(48385/50000)
-* Test Loss:0.671,Acc:83.610(8361/10000)
+![YouTube Video](https://www.youtube.com/watch?v=kPT6tlxP-aU)
 
