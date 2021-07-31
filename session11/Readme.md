@@ -8,7 +8,7 @@ Session 11 assignment submission for EVA6
 
 ## Solution ##
 * **OpenCV Yolo**
-* Ran Yolo on Coco classes and gnerated detections
+* Ran Yolo on Coco classes and generated detections
 ![Original](https://github.com/prathaban-sr/eva6/blob/main/session11/cycle3.jpeg)
 ![Detection](https://github.com/prathaban-sr/eva6/blob/main/session11/yolo_out.jpg)
 
