@@ -37,5 +37,5 @@ Session 11 assignment submission for EVA6
 
 * **Yolo Detection on Video**
 
-![YouTube Video](https://www.youtube.com/watch?v=kPT6tlxP-aU)
+[YouTube Video](https://www.youtube.com/watch?v=kPT6tlxP-aU)
 
