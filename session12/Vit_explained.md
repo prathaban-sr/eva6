@@ -5,7 +5,8 @@ Session 12 Vit Code explained
 
 ## Block ##
 
-The Block class represents one block of the Transformer Encoder which consists of
+The Block class represents one block of the Transformer Encoder which is responsible for
+
 1. Layer Normalization of the input
 2. Multi-head attention
 3. Addition of the Residual connection from the input to the output of the attention layer
@@ -20,13 +21,25 @@ The Embeddings class is responsible for
 2. Initialize the position embeddings and CLS token
 3. Add the patch and position embeddings
 
+## MLP ##
 
+The MLP class is responsible for
+1. Applying a FC layer to the output of the transformer encoder  
+2. It then applies the GELU activation function 
+3. Finally, applies a second FC layer to generate the output
 
-* **Vit **
-* Spatial Transformer Networks allow a neural network to learn to generate augmentations for images in order to enhance the spatial invariance of the model. e.g., it can crop a region of interest, scale and correct the orientation of an image. Since CNNs are not invariant to spatial transformations, this can help improve the accuracy of the model.
-* The model trains a set of 6 theta parameters which are applied to the input image using the affine_grid and grid_sample functions to generate the augmentation.   
-![STN Transformations](https://github.com/prathaban-sr/eva6/blob/main/session12/dataset.png)
+## Attention ##
 
-* **File Links**
-* [Colab File](https://colab.research.google.com/drive/1WPXThSaKefkHcp3iNLJSOa8wLdYPQjL1?usp=sharing)
-* [Github Link](https://github.com/prathaban-sr/eva6/blob/main/session12/EVA_Spatial_Transformer_CIFR.ipynb)
+The Attention class is responsible for implementing the multi-head attention using the below
+
+1. Attention(Q, K, V ) = softmax(QKt√dk)V #Kt - Keys transposed. 
+2. This is then passed through a Linear layer
+
+## Encoder ##
+
+The Encoder class is resposible for 
+
+1. Implementing all the layers of the Transformer Encoder
+2. The output of each layer is sent to the subsequent layer
+3. Layer normalization to generate the output
+
