@@ -16,3 +16,6 @@ Session 12 Spatial Transformer Network assignment submission for EVA6
 * **File Links**
 * [Colab File](https://colab.research.google.com/drive/1WPXThSaKefkHcp3iNLJSOa8wLdYPQjL1?usp=sharing)
 * [Github Link](https://github.com/prathaban-sr/eva6/blob/main/session12/EVA_Spatial_Transformer_CIFR.ipynb)
+
+* **Visual Transformer Code Explained**
+* [Code Explained](https://github.com/prathaban-sr/eva6/blob/main/session12/Vit_explained.md)
