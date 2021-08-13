@@ -31,12 +31,14 @@ The transformer encoder architecture with its (self)attention mechanism allows t
 The encoder output and N positional embeddings, called object queries, are fed to the Transformer decoder. Each layer of the Transformer decoder consists of a multi-head self attention, multi-head attention and a FFN layer. The N object queries are transformed into an output embedding by the decoder. The decoder also generates all the bounding boxes/labels at the same time. 
 
 * **Bi-partite Loss**
+
 Bipartite loss provides an elegant way of solving the object detection problem without requiring pre-knowlede of the problem, choosing anchor boxes and avoids post-processing like NMS. It is designed as a set based problem where loss is defined as the level of matching between N predicted labels/bounding boxes and the ground-truth. Both sets have the same number of elements (populated with Null class predictions if necessary). Since the loss looks for a 1-1 correspondence of the boxes, the best fitting bounding box is chosen while eliminating duplicate matches.
 
 * **Object Queries**
 
 Object Queries are N embeddings of size d that are transformed into an output embedding by the decoder in parallel. They are independently decoded into box coordinates and class labels by a feed forward network. 
 
-* **Detection sample**
+## Detection sample ##
+
 ![Detection sample](https://github.com/prathaban-sr/eva6/blob/main/session14/download.png)
 
