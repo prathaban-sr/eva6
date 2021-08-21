@@ -1,3 +1,12 @@
+# EVA6 Capstone #
+
+Capstone 1
+
+## Team ##
+
+* S R Prathaban
+
+## Solution ##
 
 1. Convert the dataset we have collected with segmentation information to add bounding box information   
 2. Generate pan-optic segmented ground truth data by running DETR on the collected dataset and correcting and adding our classes as necessary
